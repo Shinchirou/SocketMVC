@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="javafx-src">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/jsoup-1.12.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar:///usr/java/latest/javafx-src.zip!/" />
+    </SOURCES>
+  </library>
+</component>
