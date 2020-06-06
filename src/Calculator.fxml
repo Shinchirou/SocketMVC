@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?imp <?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="408.0" maxWidth="257.0" minHeight="408.0" minWidth="257.0" prefHeight="408.0" prefWidth="257.0" scaleShape="false" styleClass="window" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CalculatorController">
+   <children>
+      <TextField alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="258.0" styleClass="result" stylesheets="@application.css" text="0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </TextField>
+      <GridPane layoutY="81.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="327.0" prefWidth="257.0" scaleShape="false">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="40.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="40.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Button alignment="CENTER" lineSpacing="1.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="69.0" styleClass="digit" stylesheets="@application.css" text="AC" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </GridPane.margin></Button>
+            <Button alignment="CENTER" lineSpacing="1.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="69.0" styleClass="digit" stylesheets="@application.css" text="+/-" textAlignment="CENTER" GridPane.columnIndex="1">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </GridPane.margin></Button>
+            <Button alignment="CENTER" lineSpacing="1.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="69.0" styleClass="digit" stylesheets="@application.css" text="\%" textAlignment="CENTER" GridPane.columnIndex="2">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </GridPane.margin></Button>
+            <Button alignment="CENTER" lineSpacing="1.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="69.0" styleClass="digit" stylesheets="@application.css" text="/" textAlignment="CENTER" GridPane.columnIndex="3">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </GridPane.margin></Button>
+            <Button alignment="CENTER" lineSpacing="1.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="69.0" styleClass="digit" stylesheets="@application.css" text="2" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </GridPane.margin></Button>
+            <Button alignment="CENTER" lineSpacing="1.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="69.0" styleClass="digit" stylesheets="@application.css" text="3" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </GridPane.margin></Button>
+            <Button alignment="CENTER" lineSpacing="1.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="69.0" styleClass="digit" stylesheets="@application.css" text="1" textAlignment="CENTER" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </GridPane.margin></Button>
+            <Button alignment="CENTER" lineSpacing="1.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="71.0" styleClass="digit" stylesheets="@application.css" text="X" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </GridPane.margin></Button>
+            <Button alignment="CENTER" lineSpacing="1.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="69.0" styleClass="digit" stylesheets="@application.css" text="4" textAlignment="CENTER" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </GridPane.margin></Button>
+            <Button alignment="CENTER" lineSpacing="1.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="69.0" styleClass="digit" stylesheets="@application.css" text="5" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </GridPane.margin></Button>
+            <Button alignment="CENTER" lineSpacing="1.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="69.0" styleClass="digit" stylesheets="@application.css" text="6" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </GridPane.margin></Button>
+            <Button alignment="CENTER" lineSpacing="1.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="69.0" styleClass="digit" stylesheets="@application.css" text="-" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </GridPane.margin></Button>
+            <Button alignment="CENTER" lineSpacing="1.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="69.0" styleClass="digit" stylesheets="@application.css" text="7" textAlignment="CENTER" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </GridPane.margin></Button>
+            <Button alignment="CENTER" lineSpacing="1.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="69.0" styleClass="digit" stylesheets="@application.css" text="8" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </GridPane.margin></Button>
+            <Button alignment="CENTER" lineSpacing="1.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="69.0" styleClass="digit" stylesheets="@application.css" text="9" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </GridPane.margin></Button>
+            <Button alignment="CENTER" lineSpacing="1.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="69.0" styleClass="digit" stylesheets="@application.css" text="+" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </GridPane.margin></Button>
+            <Button alignment="CENTER" lineSpacing="1.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="69.0" styleClass="digit" stylesheets="@application.css" text="," textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </GridPane.margin></Button>
+            <Button alignment="CENTER" lineSpacing="1.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="69.0" styleClass="digit" stylesheets="@application.css" text="=" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </GridPane.margin></Button>
+            <Button alignment="CENTER" lineSpacing="1.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="127.0" styleClass="digit" stylesheets="@application.css" text="0" textAlignment="CENTER" GridPane.columnSpan="2147483647" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </GridPane.margin></Button>
+         </children>
+      </GridPane>
+   </children>
+
+</AnchorPane>

@@ -1,6 +1,4 @@
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextInputDialog;
 import javafx.scene.layout.AnchorPane;
@@ -24,15 +22,11 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        ViewLoader<AnchorPane, ChatController> viewLoader = new ViewLoader<>("Chat.fxml");
-        viewLoader.getController().setUserName(getUserName());
-        viewLoader.getController().setHost("localhost");
-        viewLoader.getController().setPort(9001);
-        viewLoader.getController().run();
+        ViewLoader<AnchorPane, CalculatorController> viewLoader = new ViewLoader<>("Calculator.fxml");
         Scene scene = new Scene(viewLoader.getLayout());
         primaryStage.setScene(scene);
         primaryStage.setTitle(appName);
-        primaryStage.setOnHiding( e -> primaryStage_Hiding(e, viewLoader.getController()));
+        primaryStage.setResizable(false);
         primaryStage.show();
 
     }
@@ -42,11 +36,5 @@ public class Main extends Application {
         launch(args);
     }
 
-    private void primaryStage_Hiding(WindowEvent e, ChatController controller) {
-        try {
-            controller.close();
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-    }
+
 }
